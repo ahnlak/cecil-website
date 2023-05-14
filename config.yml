@@ -1,0 +1,23 @@
+# Basic site setup; definitely edit these!
+
+title: ahnlak/cecil-website
+baseline: 'A Template Site'
+baseurl: 'https://change.me/'
+description: 'A Cecil.app-based website'
+author:
+    name: 'Your Name'
+    url: 'https://your-web.site'
+
+# Output configuration
+postprocess:
+    enabled: true
+body:
+    images:
+        resize:
+            enabled: true
+        webp:
+            enabled: true
+
+# Build configuration; I find the cache makes things worse, not better
+cache:
+    enabled: false
