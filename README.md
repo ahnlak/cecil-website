@@ -10,7 +10,7 @@ it includes default setup stuff for Bootstrap, an automatic build/deploy scripts
 ## Usage
 
 * Create a new project using this template
-* Edit this `README.md`(!) and the Cecil `config.yml`
+* Edit this `README.md`(!), the Cecil `config.yml` and the domain in `static/.htaccess`
 * Add any customisations to `assets/cecil-custom-bs.scss`
 * Derive any layouts you require from `layouts/base.html.twig`
 * Check the notes in `bin/deploy.sh`, and edit it to reflect your deployment
