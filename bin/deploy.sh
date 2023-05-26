@@ -14,7 +14,7 @@
 # These settings define where/how your site will be rsync'd to your host
 # They should be the only things you need to edit to allow deployments to flow
 RSYNC_DEST='user@hosting.co:public_html/'
-RSYNC_OPTS='-e "ssh -p 12345"'
+RSYNC_OPTS=(-e "ssh -p 12345")
 
 
 # Code begins...
@@ -51,4 +51,4 @@ fi
 
 # Step three, upload that to the destination
 echo "Deploying website..."
-rsync -a --info=stats1 ${RSYNC_OPTS} _site/ ${RSYNC_DEST}
+rsync -a --info=stats1 "${RSYNC_OPTS[@]}" _site/ ${RSYNC_DEST}
